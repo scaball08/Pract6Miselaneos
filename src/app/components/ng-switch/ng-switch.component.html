@@ -1,0 +1,41 @@
+<div class="input-group d-blok-flex">
+    <select class="custom-select " id="inputGroupSelect04" aria-label="Example select with button addon" (click)="cambiaAl(opcion.value)" #opcion>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+
+</div>
+
+<div [ngSwitch]="selc">
+
+    <div *ngSwitchCase="1" class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div *ngSwitchCase="2" class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+    <div *ngSwitchCase="3" class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div *ngSwitchCase="4" class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div *ngSwitchCase="5" class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div *ngSwitchCase="6" class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
+    <div *ngSwitchCase="7" class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+    </div>
+    <div *ngSwitchCase="8" class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+    </div>
+</div>
